@@ -1,0 +1,10 @@
+<nav id="nav">
+  <div class="brand">
+    <a href="{{site.baseurl}}">{{site.title}}</a>
+  </div>
+  <div class="menu">
+    {% for page in site.pages %}
+    <a href="{{page.url}}">{{page.title}}</a>
+    {% endfor %}
+  </div>
+</nav>
