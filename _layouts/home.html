@@ -8,9 +8,13 @@
 
     <div class="post-wrapper home">
         <div class="container">
+            <p>{{site.url}}</p>
+            <p>{{site.baseurl}}</p>
+
           {% for post in site.posts %}
           <div class="row post">
             <div class="col">
+
               <p><a href="{{site.baseurl}}{{post.url}}">{{post.title}} <span class="post-date">{{ post.date | date_to_string }}</span></a></p>
             </div>
           </div>
