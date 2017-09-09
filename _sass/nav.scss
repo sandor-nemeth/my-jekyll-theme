@@ -1,0 +1,11 @@
+.navbar {
+    font-family: Vollkorn;
+
+    &.bg-light {
+        background-color: white !important;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+}

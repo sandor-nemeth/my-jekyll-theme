@@ -1,0 +1,29 @@
+body {
+    font-family: Leto, serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 700px;
+}
+
+a,
+a:hover {
+    color: black;
+    text-decoration: none;
+
+    &.navbar-brand {
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+
+.post-wrapper .post-header h1 {
+    font-family: Vollkorn, serif;
+}
+
+.home .post .post-date {
+    font-size: 16px;
+    font-style: italic;
+}
