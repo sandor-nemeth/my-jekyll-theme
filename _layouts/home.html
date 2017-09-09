@@ -5,17 +5,15 @@
 
   <body>
     {% include header.html %}
-
-    <div class="post-wrapper home">
-        <div class="container">
+    <div class="content">
+        <section class="post-wrapper home">
           {% for post in site.posts %}
-          <div class="row post">
-            <div class="col">
-              <p><a href="{{site.baseurl}}{{post.url}}">{{post.title}} <span class="post-date">{{ post.date | date_to_string }}</span></a></p>
-            </div>
+          <div class="post">
+            <div class="post-date">{{ post.date | date_to_string }}</div>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
           </div>
           {% endfor %}
-        </div>
+        </section>
     </div>
 
     {% include footer.html %}

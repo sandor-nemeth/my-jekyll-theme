@@ -1,0 +1,23 @@
+.home {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .post {
+        a {
+            color: $black;
+            text-decoration: none;
+            line-height: 2em;
+            display: inline-block;
+            margin-left: 1em;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .post-date {
+            font-size: .8rem;
+            font-style: italic;
+            display: inline-block;
+        }
+    }
+}

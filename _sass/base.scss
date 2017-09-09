@@ -4,8 +4,13 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    background-color: $gray;
 }
 
 img {
     max-width: 700px;
+}
+
+.content {
+    background-color: $white;
 }
