@@ -1,17 +1,19 @@
-<nav class="navbar navbar-expand-lg py-4 bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="{{site.baseurl}}">{{site.title}}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse justify-content-stretch">
-            <ul class="navbar-nav ml-auto">
-                {% for page in site.html_pages %}
-                <li class="nav-item py-4">
-                    <a class="nav-link" href="{{page.url}}">{{page.title}}</a>
-                </li>
-                {% endfor %}
-            </ul>
+<nav class="navbar">
+    <div class="wrapper">
+        <div class="brand">
+            <a href="{{ site.baseurl }}/" class="navbar-brand mr-10">{{ site.title }}</a>
         </div>
+        <ul>
+            {% for page in site.html_pages %}
+            <li><a href="{{ page.url }}" class="btn btn-link">{{ page.title }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
+
+  <section class="navbar-section">
+
+  </section>
+  <section class="navbar-section">
+
+  </section>
 </nav>

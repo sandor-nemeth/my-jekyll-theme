@@ -1,11 +1,36 @@
+@import 'variables';
+
 .navbar {
-    font-family: Vollkorn;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: 1px solid $gray;
+    font-family: Leto, sans-serif;
 
-    &.bg-light {
-        background-color: white !important;
-    }
+    .wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
 
-    .nav-link:hover {
-        text-decoration: underline;
+        a {
+            color: $black;
+            text-decoration: none;
+            transition: all .5s ease;
+            margin-left: 2rem;
+            font-size: 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .brand {
+
+        }
+
+        ul {
+            li {
+                display: inline-block;
+            }
+        }
     }
 }
