@@ -21,3 +21,5 @@ exclude:
 
 sass:
   sass_dir: _sass
+
+baseurl: /my-jekyll-theme
