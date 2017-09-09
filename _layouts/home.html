@@ -5,8 +5,17 @@
 
   <body>
     {% include header.html %}
-    <div class="container" style="margin-top: 100px">
-      {{content}}
+
+    <div class="post-wrapper">
+        <div class="container">
+          {% for post in site.posts %}
+          <div class="row">
+            <div class="col">
+              <p><a href="{{ post.url }}">{{post.title}} - {{ post.date | date_to_string }}</a></p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
     </div>
 
     {% include footer.html %}
