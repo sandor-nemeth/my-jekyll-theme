@@ -7,13 +7,12 @@
     {% include header.html %}
 
     <div class="post-wrapper home">
-        <p>{{site.baseurl}}
         <div class="container">
           {% for post in site.posts %}
           <div class="row post">
             <div class="col">
 
-              <p><a href="{{site.github.url}}{{post.url}}">{{post.title}} <span class="post-date">{{ post.date | date_to_string }}</span></a></p>
+              <p><a href="{{site.baseurl}}{{post.url}}">{{post.title}} <span class="post-date">{{ post.date | date_to_string }}</span></a></p>
             </div>
           </div>
           {% endfor %}
