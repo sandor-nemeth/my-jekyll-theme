@@ -1,34 +1,36 @@
+.masthead {
+    background-color: $header-color;
+    font-family: Leto, sans-serif;
+    color: $white;
+
+    .container {
+        padding: 3rem 0;
+        text-align: center;
+        width: 400px;
+    }
+}
+
 .navbar {
     background-color: $white;
-    margin: 0 auto;
     padding: 0;
-    border-bottom: 1px solid $gray;
     font-family: Leto, sans-serif;
 
-    .wrapper {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-
-        a {
-            color: $black;
-            text-decoration: none;
-            transition: all .5s ease;
-            margin-left: 2rem;
-            font-size: 1rem;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .brand {
-
-        }
-
+    .container {
         ul {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+
             li {
-                display: inline-block;
+                flex: 1 1 0;
+                text-align: center;
+                padding: 2rem 0;
+
+                a {
+                    color: $black;
+                    text-transform: uppercase;
+                    font-size: .9rem;
+                }
             }
         }
     }

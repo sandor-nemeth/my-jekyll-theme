@@ -7,10 +7,20 @@ body {
     background-color: $gray;
 }
 
+a {
+    text-decoration: none;
+    color: $teal;
+}
+
 img {
     max-width: 700px;
 }
 
 .content {
     background-color: $white;
+}
+
+.container {
+    max-width: $content-width;
+    margin: 0 auto;
 }
