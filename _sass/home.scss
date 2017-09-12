@@ -1,9 +1,29 @@
 .home {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-family: Leto, sans-serif;
+
+    h3 {
+        font-style: italic;
+        font-weight: 300;
+        color: $dimgray;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        li {
+            a {
+                color: $black;
+                line-height: 2;
+            }
+        }
+    }
 
     .post {
-        font-family: Leto, sans-serif;
+
         a {
             color: $black;
             text-decoration: none;

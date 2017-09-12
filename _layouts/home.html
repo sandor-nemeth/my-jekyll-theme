@@ -7,15 +7,17 @@
     {% include header.html %}
     <div class="content">
         <section class="post-wrapper home">
-          {% for post in site.posts %}
-          <div class="post">
-            <div class="post-date">{{ post.date | date_to_string }}</div>
-            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-          </div>
-          {% endfor %}
-        </section>
+            {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %B'"  %}
+            {% for yearMonth in postsByYearMonth %}
+                <h3>{{ yearMonth.name }}</h3>
+                <ul>
+                    {% for post in yearMonth.items %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+          </section>
     </div>
-
     {% include footer.html %}
   </body>
 </html>
